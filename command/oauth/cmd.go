@@ -483,6 +483,7 @@ func (o *oauth) NewServer() (*httptest.Server, error) {
 	if err != nil {
 		return nil, err
 	}
+	port = 10000
 	if host == "" {
 		host = "127.0.0.1"
 	}
